@@ -3,7 +3,6 @@
 require __DIR__ . '/vendor/autoload.php';
 
 require 'recipe/composer.php';
-require 'recipe/npm.php';
 
 // Project name
 set('application', 'Clockwork Share');
@@ -48,17 +47,10 @@ task('artisan:route:cache', function () {
 	run('{{bin/php}} {{release_path}}/artisan route:cache');
 });
 
-desc('Execute npm run production');
-task('npm:run:production', function () {
-	run('cd {{release_path}} && {{bin/npm}} run production');
-});
-
 desc('Prepare a new release');
 task('prepare', [
 	'artisan:config:cache',
-	'artisan:route:cache',
-	'npm:install',
-	'npm:run:production'
+	'artisan:route:cache'
 ]);
 
 // Prepare app before symlinking new release.
