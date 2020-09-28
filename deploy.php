@@ -12,8 +12,7 @@ set('repository', 'https://github.com/underground-works/clockwork-share.git');
 
 // Shared files/dirs between deploys
 add('shared_files', [
-	'.env',
-	'public/data'
+	'.env'
 ]);
 
 add('shared_dirs', [
@@ -47,10 +46,16 @@ task('artisan:route:cache', function () {
 	run('{{bin/php}} {{release_path}}/artisan route:cache');
 });
 
+desc('Execute artisan storage:link');
+task('artisan:storage:link', function () {
+	run('{{bin/php}} {{release_path}}/artisan storage:link');
+});
+
 desc('Prepare a new release');
 task('prepare', [
 	'artisan:config:cache',
-	'artisan:route:cache'
+	'artisan:route:cache',
+	'artisan:storage:link'
 ]);
 
 // Prepare app before symlinking new release.
