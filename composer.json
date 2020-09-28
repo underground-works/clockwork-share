@@ -12,6 +12,8 @@
         "spatie/browsershot": "^3.36"
     },
     "require-dev": {
+        "deployer/deployer": "^6.8",
+        "deployer/recipes": "^6.2",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^5.0",
@@ -40,6 +42,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "deploy": "dep deploy",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
