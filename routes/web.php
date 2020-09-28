@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::permanentRedirect('/', config('app.website_url'));
+
 Route::get   ('share/{request}.png', 'ImageController@index' )->name('image');
 Route::get   ('share/{request}',     'HomeController@index'  )->name('share');
 Route::delete('share/{request}',     'DeleteController@index')->name('delete');

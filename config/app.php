@@ -54,6 +54,7 @@ return [
 
     'url' => env('APP_URL', 'https://clockwork.underground.works'),
 
+    'website_url' => env('WEBSITE_URL', 'https://underground.works/clockwork/'),
     'asset_url' => env('ASSET_URL', null),
 
     /*
