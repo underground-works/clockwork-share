@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6319a81be992a9dd247b",
+    "revision": "d8d7c3c35343564c9165",
     "url": "css/app.22031d28.css"
   },
   {
@@ -40,12 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/whats-new/5.0/toolbar.png"
   },
   {
-    "revision": "0c9666a33ea84078bbe17f704dda80e7",
+    "revision": "9c49b0fa464b665d64444c6feecb0321",
     "url": "index.html"
   },
   {
-    "revision": "6319a81be992a9dd247b",
-    "url": "js/app.42b15257.js"
+    "revision": "d8d7c3c35343564c9165",
+    "url": "js/app.ffa99335.js"
   },
   {
     "revision": "43f357e6d4aa46f0dd0e",
