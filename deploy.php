@@ -24,3 +24,16 @@ host('arizona')
 	->set('labels', [ 'stage' => 'production' ])
 	->set('user', 'its')
 	->set('deploy_path', '/Sites/its/clockwork.underground.works');
+
+/**
+ * Main deploy task.
+ */
+desc('Deploys your project');
+task('deploy', [
+    'deploy:prepare',
+    'deploy:vendors',
+    'artisan:storage:link',
+    'artisan:config:cache',
+    'artisan:route:cache',
+    'deploy:publish',
+]);
