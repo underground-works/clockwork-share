@@ -3,20 +3,19 @@
     "type": "project",
     "description": "php dev tools in your browser - share service",
     "require": {
-        "php": "^7.4",
+        "php": "^8.3",
         "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "itsgoingd/clockwork": "^4.1",
-        "laravel/framework": "^8.0",
+        "laravel/framework": "^9.0",
         "laravel/tinker": "^2.0",
         "spatie/browsershot": "^3.36"
     },
     "require-dev": {
-        "deployer/deployer": "^6.8",
-        "deployer/recipes": "^6.2",
+        "deployer/deployer": "^7.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^5.0",
+        "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.0"
     },
     "config": {
